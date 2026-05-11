@@ -6,7 +6,7 @@ import { pool } from "./db.js";
 dotenv.config();
 
 const app = express();
-const corsOrigin = process.env.CORS_ORIGIN || "http://localhost:5173";
+const corsOrigin = process.env.CORS_ORIGIN || "http://54.156.45.200:8080";
 
 app.use(cors({ origin: corsOrigin }));
 app.use(express.json());
